@@ -84,3 +84,153 @@ fa-film {
     width: 350px;
 }
 
+.search-list {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    max-height: 500px;
+    overflow-y: scroll;
+    z-index: 10;
+}
+
+.search-list .search-list--item {
+    background-color: #292929;
+    padding: 8px;
+    border-bottom: 1px solid #171717;
+    width: calc(350px - 8px);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 300ms ease;
+}
+
+.search-list .search-list--item:hover {
+    background-color: #1f1f1f;
+}
+
+.search-list--item {
+    display: flex;
+    align-items: center;
+}
+
+.search-list--thumbnail img{
+    width: 40px;
+    margin-right: 16px;
+}
+
+.search-item--info h3{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.search-item--info p {
+    font-size: 12px;
+    margin-top: 8px;
+    font-weight: 600;
+    opacity: 0.6;
+}
+
+/* MOVIE INFO */
+
+.result-container {
+    padding: 48px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.movie-poster img {
+    max-width: 300px;
+    margin: 0 auto;
+    border: 4px solid #fff;
+}
+
+.movie-info {
+    text-align: center;
+    color: #fff;
+    padding-top: 32px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.movie-title {
+    font-size: 32px;
+    color: #f0e10a;
+}
+
+.movie-misc--info {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+
+.movie-info .year {
+    font-weight: 500;
+}
+
+.movie-info .rated {
+    background-color: #f0e10a;
+    padding: 8px;
+    margin: 0 8px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.movie-info .released {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.movie-info .writer {
+    padding: 8px;
+    margin: 16px 0;
+}
+
+.movie-info .genre {
+    background-color: #292929;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 3px;
+}
+
+.movie-info .plot {
+    max-width: 400px;
+    margin: 16px auto;
+}
+
+.movie-info .language {
+    color: #f0e10a;
+    font-style: italic;
+}
+
+.movie-info .awards {
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.movie-info .awards i {
+    color: #f0e10a;
+    margin: 12px 8px 0 0;
+}
+
+
+@media(max-width: 450px){
+    .logo p {
+        font-size: 18px;
+    }
+    .search-element .form-control{
+        width: 90%;
+        margin: 0 auto;
+        padding: 8px 16px;
+    }
+    .search-element h3 {
+        font-size: 20px;
+    }
+    
+}
+
+
