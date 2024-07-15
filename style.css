@@ -13,16 +13,28 @@ a {
     text-decoration: none;
 }
 
-fa-film {
-    width: 100%;
-    display: block;
-    color: yellow;
+img {
+
 }
 
-.wrapper {
-    min-height: 100vh;
-    background-color: #171717;
+p {
+    display: block;
+    margin-block-start: 16px;
+    margin-block-end: 16px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
 }
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+  .wrapper { 
+    background-color: #292929;
+    
+} 
 
 .wrapper .container {
     max-width: 1200px;
@@ -31,14 +43,13 @@ fa-film {
 }
 
 .search-container {
-    background-color: #1d1d1d;
+    background-color: #292929;
     display: flex;
     flex-wrap: wrap;
     height: 180px;
     align-items: center;
     justify-content: center;
     gap: 10px;
-
 }
 
 .logo {
@@ -117,119 +128,57 @@ fa-film {
     margin-right: 16px;
 }
 
-.search-item--info h3{
-    font-weight: 600;
-    font-size: 16px;
-}
 
-.search-item--info p {
-    font-size: 12px;
-    margin-top: 8px;
-    font-weight: 600;
-    opacity: 0.6;
-}
+/* Movie Card 
 
-/* MOVIE INFO */
+<div class="result-container" id="resultContainer">
+    <div class="movie-grid" id="movieGrid">
+        <div class="movie-card">
+            <img src="" alt="">
+            <h3>Movie Name</h3>
+            <p>Movie year</p>
+        </div>
+    </div>
+  </div> 
+  
+  */
 
 .result-container {
-    padding: 48px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100vh;
-
-}
-
-.movie-poster img {
-    max-width: 300px;
-    margin: 0 auto;
-    border: 4px solid #fff;
-}
-
-.movie-info {
+    margin-top: 40px;
     text-align: center;
-    color: #fff;
-    padding-top: 32px;
-    max-width: 800px;
+    background-color: #292929;
+}
+
+.movie-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-.movie-title {
-    font-size: 32px;
-    color: #f0e10a;
+.movie-card {
+    background-color: #171717;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+    box-sizing: border-box;
 }
 
-.movie-misc--info {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 16px;
+.movie-card img {
+    max-width: 100%;
+    border-radius: 10px;
 }
 
-.movie-info .year {
-    font-weight: 500;
+.movie-card h3 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fff;
 }
 
-.movie-info .rated {
-    background-color: #f0e10a;
-    padding: 8px;
-    margin: 0 8px;
-    border-radius: 3px;
-    font-weight: 600;
+.movie-card p {
+    color: #fff;
 }
-
-.movie-info .released {
-    font-size: 14px;
-    opacity: 0.9;
-}
-
-.movie-info .writer {
-    padding: 8px;
-    margin: 16px 0;
-}
-
-.movie-info .genre {
-    background-color: #292929;
-    display: inline-block;
-    padding: 8px;
-    border-radius: 3px;
-}
-
-.movie-info .plot {
-    max-width: 400px;
-    margin: 16px auto;
-}
-
-.movie-info .language {
-    color: #f0e10a;
-    font-style: italic;
-}
-
-.movie-info .awards {
-    font-weight: 300;
-    font-size: 12px;
-}
-
-.movie-info .awards i {
-    color: #f0e10a;
-    margin: 12px 8px 0 0;
-}
-
-
-@media(max-width: 450px){
-    .logo p {
-        font-size: 18px;
-    }
-    .search-element .form-control{
-        width: 90%;
-        margin: 0 auto;
-        padding: 8px 16px;
-    }
-    .search-element h3 {
-        font-size: 20px;
-    }
-    
-}
-
-
