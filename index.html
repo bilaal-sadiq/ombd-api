@@ -19,22 +19,20 @@
     </div>
     
     <!-- Search Bar -->
-    <div class="search-container">
+    <div class="-container">
         <div class="search-element">
             <h3 class="search-movie">Search Movie:</h3>
-            <input type="text" class="form-control" placeholder="Search Movie title..." 
+            <input type="text" class="form-control" id="movieTitle" placeholder="Search Movie title..." 
             id="movie-search-box">
         </div>
+        <button class="search-button" onclick="searchMovie()">Search</button>
     </div>
     
     <!-- Movie Grid -->
     
     <div class="result-container" id="resultContainer">
         <div class="movie-grid" id="movieGrid">
-            <div class="movie-card">
-                <img src="./assets/medium-cover.jpg" alt="">
-                <h3>Movie Name</h3>
-                <p>Movie year</p>
+            <!-- <div class="movie-card"> -->
             </div>
         </div>
     </div> 
@@ -45,3 +43,5 @@
 <script src = "script.js"></script>
 </body>
 </html>
+
+
