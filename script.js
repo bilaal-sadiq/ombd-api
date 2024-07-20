@@ -2,9 +2,6 @@
 
 // https://www.omdbapi.com/?s=spider&page=1&apikey=ba7312e3
 
-// http://www.omdbapi.com/?apikey=[ba7312e3]&
-
-// http://img.omdbapi.com/?apikey=[ba7312e3]&
 
 // async function main() {
 //     const movies = await fetch("https://www.omdbapi.com/?s=spider&page=1&apikey=ba7312e3");
@@ -78,7 +75,7 @@ function displayMovies(movies) {
         movieCard.innerHTML = `
             <img src="${movie.Poster}" alt="Poster of ${movie.Title}">
             <h3>${movie.Title}</h3>
-            <p>${movie.imdbRating}</p>
+            <p>${movie.year}</p>
         `;
         movieGrid.appendChild(movieCard);
     });
